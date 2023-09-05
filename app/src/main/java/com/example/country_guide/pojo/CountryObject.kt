@@ -7,31 +7,31 @@ data class CountryObject(
 
     @SerializedName("name")
     @Expose
-    val name: Name,
+    val name: Name? = null,
 
     @SerializedName("currencies")
     @Expose
-    val currencies: Currencies,
+    val currencies: Currencies? = null,
 
     @SerializedName("capital")
     @Expose
-    val capital: String,
+    val capital: String? = null,
 
     @SerializedName("region")
     @Expose
-    val region: String,
+    val region: String? = null,
 
     @SerializedName("subregion")
     @Expose
-    val subregion: String,
+    val subregion: String? = null,
 
     @SerializedName("population")
     @Expose
-    val population: Int,
+    val population: Int? = null,
 
     @SerializedName("flags")
     @Expose
-    val flags: Flag,
+    val flags: Flag? = null,
 
 
 )

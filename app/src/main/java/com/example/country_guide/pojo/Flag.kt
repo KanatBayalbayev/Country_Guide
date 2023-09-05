@@ -7,5 +7,5 @@ data class Flag(
 
     @SerializedName("png")
     @Expose
-    val png: String,
+    val png: String? = null,
 )

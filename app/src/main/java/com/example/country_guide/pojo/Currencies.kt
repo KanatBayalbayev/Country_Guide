@@ -7,5 +7,5 @@ import com.google.gson.annotations.SerializedName
 data class Currencies(
     @SerializedName("currency")
     @Expose
-    val currency: Currency,
+    val currency: Currency? = null,
 )
