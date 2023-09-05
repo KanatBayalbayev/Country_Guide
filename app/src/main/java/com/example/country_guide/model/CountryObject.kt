@@ -15,7 +15,7 @@ data class CountryObject(
 
     @SerializedName("capital")
     @Expose
-    val capital: String? = null,
+    val capital: List<String>? = null,
 
     @SerializedName("region")
     @Expose
