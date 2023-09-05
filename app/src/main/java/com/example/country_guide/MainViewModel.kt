@@ -14,11 +14,9 @@ import io.reactivex.schedulers.Schedulers
 class MainViewModel : ViewModel() {
     private val compositeDisposable = CompositeDisposable()
     private val _countryData = MutableLiveData<CountryObject>()
-    val countryData: LiveData<CountryObject> = _countryData
 
-    init {
-        loadData()
-    }
+
+
 
 
     fun loadData() {
@@ -26,10 +24,8 @@ class MainViewModel : ViewModel() {
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({
-                for (country in it) {
-                    _countryData.value = country
-                }
 
+                Log.d("MainViewModel", it.toString())
 
             }, {
                 Log.d("MainViewModel", it.message.toString())

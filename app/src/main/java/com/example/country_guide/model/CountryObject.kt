@@ -9,9 +9,9 @@ data class CountryObject(
     @Expose
     val name: Name? = null,
 
-    @SerializedName("currencies")
-    @Expose
-    val currencies: Currencies? = null,
+//    @SerializedName("currencies")
+//    @Expose
+//    val currencies: Currencies? = null,
 
     @SerializedName("capital")
     @Expose

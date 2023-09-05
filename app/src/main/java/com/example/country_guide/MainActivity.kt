@@ -12,8 +12,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         viewModel = ViewModelProvider(this)[MainViewModel::class.java]
-        viewModel.countryData.observe(this) {
-            Log.d("MainActivity", it.name?.common.toString())
-        }
+        viewModel.loadData()
     }
 }
