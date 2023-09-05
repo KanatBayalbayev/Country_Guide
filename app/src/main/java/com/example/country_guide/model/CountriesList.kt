@@ -1,4 +1,4 @@
-package com.example.country_guide.pojo
+package com.example.country_guide.model
 
 data class CountriesList(
 
